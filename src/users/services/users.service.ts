@@ -25,4 +25,8 @@ export class UsersService implements IUserService {
         const newUser = this.userRepository.create({...user, password});
         return this.userRepository.save(newUser);
     }
+
+    async findUser(findUserParams: Partial<{ id: number; email: string; }>) {
+        
+    }
 }

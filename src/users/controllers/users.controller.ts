@@ -1,6 +1,6 @@
 import { Controller, Inject } from '@nestjs/common';
 import { UsersService } from '../services/users.service';
-import { Routes, Services } from 'src/utils/types';
+import { Routes, Services } from 'src/utils/constants';
 
 @Controller(Routes.USERS)
 export class UsersController {
